@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ https://www.springframework.org/schema/context
+ https://www.springframework.org/schema/spring-context.xsd">
+ 
+<!--  if we are setting values using property tag than we are using setter approach -->
+ 	<!-- <bean class="com.springcore.Student" name="student1">
+ 		<property name="studentId">
+ 			<value>2242</value>
+ 		</property>
+ 		<property name="studentAddress">
+ 			<value>Meerut</value>
+ 		</property>
+ 		<property name="studentName">
+ 			<value>Vanshaj</value>
+ 		</property>
+ 	</bean> -->
+ 	<!-- <bean class="com.springcore.Student" name="student1">
+ 		<property name="studentName" value="Vanshaj" />
+ 	</bean> -->
+ 	
+<!--  	p schema declaration -->
+
+	<bean class="com.springcore.Student" name="student1" p:studentId="123" p:studentName="Vanshaj" p:studentAddress="Meerut" />
+</beans>
